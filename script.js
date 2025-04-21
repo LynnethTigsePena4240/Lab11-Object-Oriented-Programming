@@ -14,6 +14,12 @@ class ProductProperties {
     toString() {
         return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}`;
     }
+
+    static applyDiscount(products, discount) {
+        products.forEach(product => {
+            product.price -= product.price * (discount / 100);
+        });
+    }
 }
 
 //Part 2: Adding Inheritance
@@ -28,13 +34,16 @@ class PerishableProductProperties extends ProductProperties {
 }
 
 // two instances of PerishableProductProperties
-let milk = new PerishableProductProperties("milk", 5.99, 2, "2025-05-01");
+let milk = new PerishableProductProperties("milk", 6, 2, "2025-05-01");
 let sourcream = new PerishableProductProperties("sour cream", 2.50, 1, "2025-04-25")
 
 console.log(milk.toString())
 console.log(sourcream.toString())
 
 //Part 3: Static Methods and Properties
+console.log(ProductProperties.applyDiscount([milk,sourcream], 10)); // Apply a 10% discount to all products`
+console.log(milk.toString())
+console.log(sourcream.toString())
 
 //Part 4: Store Management
 
