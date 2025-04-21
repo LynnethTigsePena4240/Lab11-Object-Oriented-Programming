@@ -12,7 +12,7 @@ class ProductProperties {
     }
 
     toString() {
-        return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}`;
+        return `Product: ${this.name}, Price: $${this.price.toFixed(2)}, Quantity: ${this.quantity}`;
     }
 
     static applyDiscount(products, discount) {
@@ -29,7 +29,7 @@ class PerishableProductProperties extends ProductProperties {
         this.expirationDate = expirationDate;
     }
     toString() {
-        return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}, Expiration Date: ${this.expirationDate}`;
+        return `Product: ${this.name}, Price: $${this.price.toFixed(2)}, Quantity: ${this.quantity}, Expiration Date: ${this.expirationDate}`;
     }
 }
 
