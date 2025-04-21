@@ -90,3 +90,5 @@ let cheese = new PerishableProductProperties("cheese", 4, 1, "2025-05-15");
 store.addProduct(apple);
 store.addProduct(popcorn);
 store.addProduct(chips);
+store.addProduct(yogurt);
+store.addProduct(cheese);
