@@ -33,6 +33,8 @@ class PerishableProductProperties extends ProductProperties {
     }
 }
 
+console.log("Part 2: Adding Inheritance:")
+
 // two instances of PerishableProductProperties
 let milk = new PerishableProductProperties("milk", 6, 2, "2025-05-01");
 let sourcream = new PerishableProductProperties("sour cream", 2.50, 1, "2025-04-25")
@@ -41,9 +43,11 @@ console.log(milk.toString())
 console.log(sourcream.toString())
 
 //Part 3: Static Methods and Properties
+console.log('\n');
+console.log("Part 3: Static Methods and Properties:")
 
 //statice method is in the product class 
-console.log(ProductProperties.applyDiscount([milk,sourcream], 10));
+ProductProperties.applyDiscount([milk,sourcream], 10)
 console.log(milk.toString())
 console.log(sourcream.toString())
 
@@ -74,6 +78,9 @@ class StoreManagement {
 }
 
 //Part 5: Testing the System
+console.log('\n');
+
+console.log("Part 5: Testing the system:")
 
 let store = new StoreManagement();
 
@@ -95,3 +102,12 @@ store.addProduct(cheese);
 
 ProductProperties.applyDiscount(store.inventory, 15);
 console.log("total inventory value: $" + store.getInventoryValue().toFixed(2));
+console.log("\n");
+
+console.log("finding a product by name (product is in the inventory):");
+console.log(store.findProductByName("apple")) // this product exists in the inventory
+console.log("\n");
+
+
+console.log("finding a product by name (product is not in the inventory):");
+console.log(store.findProductByName("banana")) // this product does not exist in the inventory
