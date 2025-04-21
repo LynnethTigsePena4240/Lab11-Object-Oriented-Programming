@@ -92,3 +92,5 @@ store.addProduct(popcorn);
 store.addProduct(chips);
 store.addProduct(yogurt);
 store.addProduct(cheese);
+
+console.log("total inventory value: $" + store.getInventoryValue().toFixed(2));
