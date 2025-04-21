@@ -52,6 +52,10 @@ class StoreManagement {
     constructor(products = []) {
         this.products = products;
     }
+
+    addProduct(product) {
+        this.products.push(product);
+    }
 }
 
 //Part 5: Testing the System
