@@ -84,6 +84,8 @@ store.addProduct(sourcream);
 let apple = new ProductProperties("apple", .50, 2);
 let popcorn = new ProductProperties("popcorn", 2.50, 4);
 let chips = new ProductProperties("chips", 3, 1);
+let yogurt = new PerishableProductProperties("yogurt", 1.50, 3, "2025-05-30");
+let cheese = new PerishableProductProperties("cheese", 4, 1, "2025-05-15");
 
 store.addProduct(apple);
 store.addProduct(popcorn);
