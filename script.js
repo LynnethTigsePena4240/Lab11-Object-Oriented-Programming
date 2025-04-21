@@ -60,6 +60,17 @@ class StoreManagement {
     getInventoryValue() {
         return this.inventory.reduce((total, product) => total + product.getTotalPrice(), 0);
     }
+
+    findProductByName(name) {
+        let product = this.inventory.find(product => product.name === name)
+        if (product) {
+            return product;
+        } else {
+            console.log(`Product ${name} not found. therefore returning:`);
+            return null;
+        }
+    }
+
 }
 
 //Part 5: Testing the System
