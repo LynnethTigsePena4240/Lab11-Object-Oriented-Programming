@@ -31,8 +31,8 @@ class PerishableProductProperties extends ProductProperties {
 let milk = new PerishableProductProperties("milk", 5.99, 2, "2025-05-01");
 let sourcream = new PerishableProductProperties("sour cream", 2.50, 1, "2025-04-25")
 
-milk.toString()
-sourcream.toString()
+console.log(milk.toString())
+console.log(sourcream.toString())
 
 //Part 3: Static Methods and Properties
 
