@@ -56,6 +56,10 @@ class StoreManagement {
     addProduct(product) {
         this.inventory.push(product);
     }
+
+    getInventoryValue() {
+        return this.inventory.reduce((total, product) => total + product.getTotalPrice(), 0);
+    }
 }
 
 //Part 5: Testing the System
