@@ -93,4 +93,5 @@ store.addProduct(chips);
 store.addProduct(yogurt);
 store.addProduct(cheese);
 
+ProductProperties.applyDiscount(store.inventory, 15);
 console.log("total inventory value: $" + store.getInventoryValue().toFixed(2));
