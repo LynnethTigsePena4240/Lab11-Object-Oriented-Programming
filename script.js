@@ -41,10 +41,17 @@ console.log(milk.toString())
 console.log(sourcream.toString())
 
 //Part 3: Static Methods and Properties
-console.log(ProductProperties.applyDiscount([milk,sourcream], 10)); // Apply a 10% discount to all products`
+
+//statice method is in the product class 
+console.log(ProductProperties.applyDiscount([milk,sourcream], 10));
 console.log(milk.toString())
 console.log(sourcream.toString())
 
 //Part 4: Store Management
+class StoreManagement {
+    constructor(products = []) {
+        this.products = products;
+    }
+}
 
 //Part 5: Testing the System
