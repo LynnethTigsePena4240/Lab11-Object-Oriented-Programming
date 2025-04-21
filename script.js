@@ -49,12 +49,12 @@ console.log(sourcream.toString())
 
 //Part 4: Store Management
 class StoreManagement {
-    constructor(products = []) {
-        this.products = products;
+    constructor(inventory = []) {
+        this.inventory = inventory;
     }
 
     addProduct(product) {
-        this.products.push(product);
+        this.inventory.push(product);
     }
 }
 
