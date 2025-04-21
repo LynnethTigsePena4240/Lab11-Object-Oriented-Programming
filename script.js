@@ -74,3 +74,17 @@ class StoreManagement {
 }
 
 //Part 5: Testing the System
+
+let store = new StoreManagement();
+
+//adding the prodects i already created before
+store.addProduct(milk);
+store.addProduct(sourcream);
+
+let apple = new ProductProperties("apple", .50, 2);
+let popcorn = new ProductProperties("popcorn", 2.50, 4);
+let chips = new ProductProperties("chips", 3, 1);
+
+store.addProduct(apple);
+store.addProduct(popcorn);
+store.addProduct(chips);
